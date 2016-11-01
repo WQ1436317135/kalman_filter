@@ -1,6 +1,7 @@
 /*=======================================================
  描述: 按下矩阵键盘对应显示键值
-	     transplant by 郑默语
+             written by 果汁 
+	     transplant by 默语
 	     2016.10.13
   1 2  3 15
   4 5  6 14
@@ -17,15 +18,15 @@ int key=16;
 /*****************初始化*******************/
 void key16_init(void)
 {
-  gpio_init(PTB0,GPO,0);
-  gpio_init(PTB1,GPO,0);
-  gpio_init(PTB2,GPO,0);
-  gpio_init(PTB3,GPO,0);
+  gpio_init(MY_PT(0),GPO,0);
+  gpio_init(MY_PT(1),GPO,0);
+  gpio_init(MY_PT(2),GPO,0);
+  gpio_init(MY_PT(3),GPO,0);
         
-  gpio_init(PTB4,GPO,0);
-  gpio_init(PTB5,GPO,0);
-  gpio_init(PTB6,GPO,0);
-  gpio_init(PTB7,GPO,0);
+  gpio_init(MY_PT(4),GPO,0);
+  gpio_init(MY_PT(5),GPO,0);
+  gpio_init(MY_PT(6),GPO,0);
+  gpio_init(MY_PT(7),GPO,0);
 }
 /*************矩阵键盘扫描******************/
 unsigned int key16_scan(void)
