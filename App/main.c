@@ -29,26 +29,26 @@ void main(void)
       kalman1_filter(&rp, adc); //卡尔曼滤波，值传给(&rp)->x   
       kalman1_filter(&rp2, adc);
       
-      key_num=key16_scan();
+      key_num = key16_scan();
       
       switch(key_num)
       {
-      case 0:((&rp)->q)-=10;break;//减小q有较明显变化，但不能减至0，否则响应时间急剧增大
-      case 1:((&rp)->p)+=10;break;
-      case 2:((&rp)->p)-=10;break;
-      case 3:((&rp)->r)+=10;break;//增大r些许变化
-      case 4:((&rp)->A)+=0.005;break;//A和H不能改
-      case 5:((&rp)->A)-=0.005;break;
+      case 0:((&rp)->q) -= 10;break;//减小q有较明显变化，但不能减至0，否则响应时间急剧增大
+      case 1:((&rp)->p) += 10;break;
+      case 2:((&rp)->p) -= 10;break;
+      case 3:((&rp)->r) += 10;break;//增大r些许变化
+      case 4:((&rp)->A) += 0.005;break;//A和H不能改
+      case 5:((&rp)->A) -= 0.005;break;
       case 6:break;
-      case 7:((&rp)->H)+=0.005;break;
-      case 8:((&rp)->H)-=0.005;break;
+      case 7:((&rp)->H) += 0.005;break;
+      case 8:((&rp)->H) -= 0.005;break;
       case 9:break;
-      case 10:((&rp)->q)+=10;break;
+      case 10:((&rp)->q) += 10;break;
       case 11:break;
       case 12:break;
       case 13:break;
       case 14:break;
-      case 15:((&rp)->r)-=10;break;
+      case 15:((&rp)->r) -= 10;break;
       case 16:break;
       default:break;       
       }
