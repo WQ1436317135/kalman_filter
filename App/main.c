@@ -2,7 +2,7 @@
 #include "math.h"
 #include "kalman_filter.h"
 #include "keyboard16.h"
-/**************************¿¨¶ûÂüÂË²¨¡ª¡ªÉÏÎ»»úÊ¾²¨Æ÷£¬°´¼üµ÷²ÎÊý*****************************/
+/**************************å¡å°”æ›¼æ»¤æ³¢â€”â€”ä¸Šä½æœºç¤ºæ³¢å™¨ï¼ŒæŒ‰é”®è°ƒå‚æ•°****************************/
 void main(void)
 {
 #if  MK60F15 
@@ -10,35 +10,35 @@ void main(void)
 #endif 
     
     LCD_Init();
-    adc_init(ADC0_SE10);// PTA7 µçÎ»Æ÷ad
-    uart_init(UART0,115200);//´®¿Ú0  UART0_RX_PIN    PTD6   UART0_TX_PIN    PTD7 
+    adc_init(ADC0_SE10);// PTA7 ç”µä½å™¨ad
+    uart_init(UART0,115200);//ä¸²å£0  UART0_RX_PIN    PTD6   UART0_TX_PIN    PTD7 
     key16_init();
 
-    kalman1_state rp;//½á¹¹Ìå
-    kalman1_init(&rp, (float)(adc_once(ADC0_SE10, ADC_16bit)) , 10);//¿¨¶ûÂüÂË²¨³õÊ¼»¯
+    kalman1_state rp;//ç»“æž„ä½“
+    kalman1_init(&rp, (float)(adc_once(ADC0_SE10, ADC_16bit)) , 10);//å¡å°”æ›¼æ»¤æ³¢åˆå§‹åŒ–
    
-    kalman1_state rp2;//½á¹¹Ìå
-    kalman1_init(&rp2, (float)(adc_once(ADC0_SE10, ADC_16bit)) , 10);//¿¨¶ûÂüÂË²¨³õÊ¼»¯
+    kalman1_state rp2;//ç»“æž„ä½“
+    kalman1_init(&rp2, (float)(adc_once(ADC0_SE10, ADC_16bit)) , 10);//å¡å°”æ›¼æ»¤æ³¢åˆå§‹åŒ–
     
-    uint16 x_16[3];//´«¸øÉÏÎ»»úÐéÄâÊ¾²¨Æ÷µÄÊý×é
+    uint16 x_16[3];//ä¼ ç»™ä¸Šä½æœºè™šæ‹Ÿç¤ºæ³¢å™¨çš„æ•°ç»„
     uint16 key_num=16;
     
     while(1)
     {             
-      uint16 adc = adc_once(ADC0_SE10, ADC_16bit);//´ÓµçÎ»Æ÷¶ÁÈ¡£Á£ÄÖµ
-      kalman1_filter(&rp, adc); //¿¨¶ûÂüÂË²¨£¬Öµ´«¸ø(&rp)->x   
+      uint16 adc = adc_once(ADC0_SE10, ADC_16bit);//ä»Žç”µä½å™¨è¯»å–ï¼¡ï¼¤å€¼
+      kalman1_filter(&rp, adc); //å¡å°”æ›¼æ»¤æ³¢ï¼Œå€¼ä¼ ç»™(&rp)->x   
       kalman1_filter(&rp2, adc);
       
       key_num=key16_scan();
-//      Display(key_num, 0, 6);//°´¼ü
+//      Display(key_num, 0, 6);//æŒ‰é”®
       
       switch(key_num)
       {
-      case 0:((&rp)->q)-=10;break;//¼õÐ¡qÓÐ½ÏÃ÷ÏÔ±ä»¯£¬µ«²»ÄÜ¼õÖÁ0£¬·ñÔòÏìÓ¦Ê±¼ä¼±¾çÔö´ó
+      case 0:((&rp)->q)-=10;break;//å‡å°qæœ‰è¾ƒæ˜Žæ˜¾å˜åŒ–ï¼Œä½†ä¸èƒ½å‡è‡³0ï¼Œå¦åˆ™å“åº”æ—¶é—´æ€¥å‰§å¢žå¤§
       case 1:((&rp)->p)+=10;break;
       case 2:((&rp)->p)-=10;break;
-      case 3:((&rp)->r)+=10;break;//Ôö´órÐ©Ðí±ä»¯
-      case 4:((&rp)->A)+=0.005;break;//AºÍH²»ÄÜ¸Ä
+      case 3:((&rp)->r)+=10;break;//å¢žå¤§räº›è®¸å˜åŒ–
+      case 4:((&rp)->A)+=0.005;break;//Aå’ŒHä¸èƒ½æ”¹
       case 5:((&rp)->A)-=0.005;break;
       case 6:break;
       case 7:((&rp)->H)+=0.005;break;
@@ -54,9 +54,9 @@ void main(void)
       default:break;       
       }
       
-      x_16[0] = (uint16)((&rp)->x);//µÚÒ»ÌõÇúÏß,¿¨¶ûÂüÂË²¨ºó£¬°´¼üµ÷ÕûºóµÄÇúÏß
-      x_16[1] = adc; //µÚ¶þÌõÇúÏß£¬Î´ÂË²¨µÄÇúÏß
-      x_16[2] = (uint16)((&rp2)->x);//µÚÈýÌõÇúÏß,¿¨¶ûÂüÂË²¨ºóµÄÇúÏß
+      x_16[0] = (uint16)((&rp)->x);//ç¬¬ä¸€æ¡æ›²çº¿,å¡å°”æ›¼æ»¤æ³¢åŽï¼ŒæŒ‰é”®è°ƒæ•´åŽçš„æ›²çº¿
+      x_16[1] = adc; //ç¬¬äºŒæ¡æ›²çº¿ï¼Œæœªæ»¤æ³¢çš„æ›²çº¿
+      x_16[2] = (uint16)((&rp2)->x);//ç¬¬ä¸‰æ¡æ›²çº¿,å¡å°”æ›¼æ»¤æ³¢åŽçš„æ›²çº¿
       
       Display(x_16[0], 0, 0);
       Display((uint16)((&rp)->p), 0, 2);
@@ -66,12 +66,12 @@ void main(void)
       Display((uint16)((&rp)->A*1000), 64, 2);
       Display((uint16)((&rp)->H*1000), 64, 4);
       
-      vcan_sendware((uint8_t *)(x_16),sizeof(x_16));//´«¸øÉÏÎ»»ú£¬ÏÔÊ¾²¨ÐÎ   ¸ÄÁË VCAN_PORT   Îª UART0 
+      vcan_sendware((uint8_t *)(x_16),sizeof(x_16));//ä¼ ç»™ä¸Šä½æœºï¼Œæ˜¾ç¤ºæ³¢å½¢   æ”¹äº† VCAN_PORT   ä¸º UART0 
 //      uart_putbuff(UART0,x_16,5);
 //      DELAY_MS(2);
     }
 }
-/**************************°´¼ü*****************************/
+/**************************æŒ‰é”®*****************************/
 /*
 void main(void)
 {
@@ -91,7 +91,7 @@ void main(void)
   }
 }
 */
-/**************************¿¨¶ûÂüÂË²¨¡ª¡ªÉÏÎ»»úÊ¾²¨Æ÷°æ±¾*****************************/
+/**************************å¡å°”æ›¼æ»¤æ³¢â€”â€”ä¸Šä½æœºç¤ºæ³¢å™¨ç‰ˆæœ¬*****************************/
 /*
 void main(void)
 {
@@ -100,28 +100,28 @@ void main(void)
 #endif 
     
     LCD_Init();
-    adc_init(ADC0_SE10);// PTA7 µçÎ»Æ÷ad
-    uart_init(UART0,115200);//´®¿Ú0  UART0_RX_PIN    PTD6   UART0_TX_PIN    PTD7      
+    adc_init(ADC0_SE10);// PTA7 ç”µä½å™¨ad
+    uart_init(UART0,115200);//ä¸²å£0  UART0_RX_PIN    PTD6   UART0_TX_PIN    PTD7      
 
-    kalman1_state rp;//½á¹¹Ìå
-    kalman1_init(&rp, (float)(adc_once(ADC0_SE10, ADC_16bit)) , 10);//¿¨¶ûÂüÂË²¨³õÊ¼»¯
+    kalman1_state rp;//ç»“æž„ä½“
+    kalman1_init(&rp, (float)(adc_once(ADC0_SE10, ADC_16bit)) , 10);//å¡å°”æ›¼æ»¤æ³¢åˆå§‹åŒ–
     
-    uint16 x_16[2];//´«¸øÉÏÎ»»úÐéÄâÊ¾²¨Æ÷µÄÊý×é
+    uint16 x_16[2];//ä¼ ç»™ä¸Šä½æœºè™šæ‹Ÿç¤ºæ³¢å™¨çš„æ•°ç»„
     
     while(1)
     {       
-      uint16 adc = adc_once(ADC0_SE10, ADC_16bit);//´ÓµçÎ»Æ÷¶ÁÈ¡£Á£ÄÖµ
-      kalman1_filter(&rp, adc); //¿¨¶ûÂüÂË²¨£¬Öµ´«¸ø(&rp)->x
-      x_16[0] = (uint16)((&rp)->x);//µÚÒ»ÌõÇúÏß,¿¨¶ûÂüÂË²¨ºóµÄÇúÏß
-      x_16[1] = adc; //µÚ¶þÌõÇúÏß£¬Î´ÂË²¨µÄÇúÏß
+      uint16 adc = adc_once(ADC0_SE10, ADC_16bit);//ä»Žç”µä½å™¨è¯»å–ï¼¡ï¼¤å€¼
+      kalman1_filter(&rp, adc); //å¡å°”æ›¼æ»¤æ³¢ï¼Œå€¼ä¼ ç»™(&rp)->x
+      x_16[0] = (uint16)((&rp)->x);//ç¬¬ä¸€æ¡æ›²çº¿,å¡å°”æ›¼æ»¤æ³¢åŽçš„æ›²çº¿
+      x_16[1] = adc; //ç¬¬äºŒæ¡æ›²çº¿ï¼Œæœªæ»¤æ³¢çš„æ›²çº¿
       Display(x_16[0], 0, 0);
-      vcan_sendware((uint8_t *)(x_16),sizeof(x_16));//´«¸øÉÏÎ»»ú£¬ÏÔÊ¾²¨ÐÎ   ¸ÄÁË VCAN_PORT   Îª UART0 
+      vcan_sendware((uint8_t *)(x_16),sizeof(x_16));//ä¼ ç»™ä¸Šä½æœºï¼Œæ˜¾ç¤ºæ³¢å½¢   æ”¹äº† VCAN_PORT   ä¸º UART0 
 //      uart_putbuff(UART0,x_16,5);
       DELAY_MS(100);
     }
 }
 */
-/**************************¿¨¶ûÂüÂË²¨*****************************/
+/**************************å¡å°”æ›¼æ»¤æ³¢*****************************/
 /*
 void main(void)
 {
@@ -130,7 +130,7 @@ void main(void)
     #endif 
     
     LCD_Init();
-    adc_init(ADC0_SE10);// PTA7 µçÎ»Æ÷ad
+    adc_init(ADC0_SE10);// PTA7 ç”µä½å™¨ad
     kalman1_state rp;
     kalman1_init(&rp, (float)(adc_once(ADC0_SE10, ADC_16bit)) , 2e2);
       
@@ -143,30 +143,30 @@ void main(void)
     }
 }
 */
-/************************Ïû¶¶ÂË²¨***************************/
+/************************æ¶ˆæŠ–æ»¤æ³¢***************************/
 /*
 void  main(void)
 {  
-    //Èç¹ûÊÇFXÐ¾Æ¬ÔòÒª¿ªÆôÓ²¼þ¸¡µãµ¥Ôª£¬¿ì5±¶
+    //å¦‚æžœæ˜¯FXèŠ¯ç‰‡åˆ™è¦å¼€å¯ç¡¬ä»¶æµ®ç‚¹å•å…ƒï¼Œå¿«5å€
     #if  MK60F15 
     SCB->CPACR |=((3UL << 10*2)|(3UL << 11*2));    
     #endif  
     
-    uint16 sample;//µçÎ»Æ÷µÄ²ÉÑùÖµ
-    uint16 effect;//ÓÐÐ§Öµ
-    uint16 count=0;//¼ÆÊý
-    const uint16 MaxOfCount=10;//¼ÆÊýÉÏÏÞ
+    uint16 sample;//ç”µä½å™¨çš„é‡‡æ ·å€¼
+    uint16 effect;//æœ‰æ•ˆå€¼
+    uint16 count=0;//è®¡æ•°
+    const uint16 MaxOfCount=10;//è®¡æ•°ä¸Šé™
  
     LCD_Init();
-    adc_init(ADC0_SE10);// PTA7 µçÎ»Æ÷ad
+    adc_init(ADC0_SE10);// PTA7 ç”µä½å™¨ad
     
     DELAY_MS(1000);
     
-    effect=adc_once(ADC0_SE10, ADC_16bit);//µçÎ»Æ÷effectÖµ
+    effect=adc_once(ADC0_SE10, ADC_16bit);//ç”µä½å™¨effectå€¼
     
     while(1)
     {      
-      { //µçÎ»Æ÷ÂË²¨³ÌÐò »á½µµÍÁéÃô¶È
+      { //ç”µä½å™¨æ»¤æ³¢ç¨‹åº ä¼šé™ä½Žçµæ•åº¦
           sample=adc_once(ADC0_SE10, ADC_16bit);
           if((sample >= effect*1.01)&&(sample <= effect*0.99))
             count=0;
