@@ -30,7 +30,6 @@ void main(void)
       kalman1_filter(&rp2, adc);
       
       key_num=key16_scan();
-//      Display(key_num, 0, 6);//按键
       
       switch(key_num)
       {
@@ -67,8 +66,6 @@ void main(void)
       Display((uint16)((&rp)->H*1000), 64, 4);
       
       vcan_sendware((uint8_t *)(x_16),sizeof(x_16));//传给上位机，显示波形   改了 VCAN_PORT   为 UART0 
-//      uart_putbuff(UART0,x_16,5);
-//      DELAY_MS(2);
     }
 }
 /**************************按键*****************************/

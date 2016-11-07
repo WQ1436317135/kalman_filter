@@ -2217,6 +2217,7 @@
           <state>$PROJ_DIR$\..\..\Lib\CMSIS\Inc</state>
           <state>$PROJ_DIR$\..\..\Lib\FatFs</state>
           <state>$PROJ_DIR$\..\..\Lib\USB</state>
+          <state>$PROJ_DIR$\..\..\Lib\CMSIS</state>
         </option>
         <option>
           <name>CCStdIncCheck</name>

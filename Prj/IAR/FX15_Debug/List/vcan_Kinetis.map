@@ -1,82 +1,85 @@
 ###############################################################################
 #
-# IAR ELF Linker V7.20.2.7424/W32 for ARM                 01/Nov/2016  21:11:45
+# IAR ELF Linker V7.20.2.7424/W32 for ARM                 07/Nov/2016  17:03:03
 # Copyright 2007-2014 IAR Systems AB.
 #
 #    Output file  =  
-#        Z:\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Exe\vcan_Kinetis.out
+#        C:\Users\wanqi\Documents\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Exe\vcan_Kinetis.out
 #    Map file     =  
-#        Z:\GitHub\kalman_filter\Prj\IAR\FX15_Debug\List\vcan_Kinetis.map
+#        C:\Users\wanqi\Documents\GitHub\kalman_filter\Prj\IAR\FX15_Debug\List\vcan_Kinetis.map
 #    Command line =  
-#        Z:\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\Control.o
-#        Z:\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\diskio.o
-#        Z:\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\ff.o
-#        Z:\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\kalman_filter.o
-#        Z:\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\keyboard16.o
-#        Z:\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\LCD.o
-#        Z:\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\main.o
-#        Z:\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\misc.o
-#        Z:\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\MK60_adc.o
-#        Z:\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\MK60_can.o
-#        Z:\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\MK60_conf.o
-#        Z:\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\MK60_dac.o
-#        Z:\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\MK60_dma.o
-#        Z:\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\MK60_DWT.o
-#        Z:\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\MK60_flash.o
-#        Z:\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\MK60_flexbus.o
-#        Z:\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\MK60_ftm.o
-#        Z:\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\MK60_gpio.o
-#        Z:\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\MK60_i2c.o
-#        Z:\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\MK60_it.o
-#        Z:\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\MK60_lptmr.o
-#        Z:\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\MK60_mcg.o
-#        Z:\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\MK60_PIT.o
-#        Z:\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\MK60_port.o
-#        Z:\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\MK60_rtc.o
-#        Z:\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\MK60_sdhc.o
-#        Z:\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\MK60_spi.o
-#        Z:\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\MK60_SysTick.o
-#        Z:\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\MK60_uart.o
-#        Z:\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\MK60_usb.o
-#        Z:\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\MK60_wdog.o
-#        Z:\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\Mutily_Line.o
-#        Z:\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\Pid.o
-#        Z:\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\Signal.o
-#        Z:\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\startup_MK60DZ10.o
-#        Z:\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\system_MK60DZ10.o
-#        "Z:\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\upper monitor.o"
-#        Z:\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\USB.o
-#        Z:\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\USB_CDC.o
-#        Z:\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\VCAN_ASCII.o
-#        Z:\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\VCAN_BMP.o
-#        Z:\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\VCAN_camera.o
-#        Z:\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\VCAN_computer.o
-#        Z:\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\vcan_img2sd.o
-#        Z:\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\VCAN_key.o
-#        Z:\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\VCAN_key_event.o
-#        Z:\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\VCAN_LCD.o
-#        Z:\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\VCAN_LCD_CH.o
-#        Z:\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\VCAN_LCD_ILI9341.o
-#        Z:\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\VCAN_LCD_ST7735R.o
-#        Z:\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\VCAN_LCD_ST7735S.o
-#        Z:\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\VCAN_LED.o
-#        Z:\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\VCAN_MMA7455.o
-#        Z:\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\VCAN_NRF24L0.o
-#        Z:\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\VCAN_NRF24L0_MSG.o
-#        Z:\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\VCAN_OV7725_Eagle.o
-#        Z:\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\VCAN_OV7725_Wolf.o
-#        Z:\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\VCAN_RTC_count.o
-#        Z:\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\VCAN_SCCB.o
-#        Z:\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\vcan_sd_app.o
-#        Z:\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\Vcan_touch.o
-#        Z:\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\VCAN_TSL1401.o
-#        Z:\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\VCAN_UI_VAR.o
-#        Z:\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\vectors.o -o
-#        Z:\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Exe\vcan_Kinetis.out --map
-#        Z:\GitHub\kalman_filter\Prj\IAR\FX15_Debug\List\vcan_Kinetis.map
-#        --config "Z:\GitHub\kalman_filter\Prj\IAR\config
+#        C:\Users\wanqi\Documents\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\Control.o
+#        C:\Users\wanqi\Documents\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\diskio.o
+#        C:\Users\wanqi\Documents\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\ff.o
+#        C:\Users\wanqi\Documents\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\kalman_filter.o
+#        C:\Users\wanqi\Documents\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\keyboard16.o
+#        C:\Users\wanqi\Documents\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\LCD.o
+#        C:\Users\wanqi\Documents\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\main.o
+#        C:\Users\wanqi\Documents\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\misc.o
+#        C:\Users\wanqi\Documents\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\MK60_adc.o
+#        C:\Users\wanqi\Documents\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\MK60_can.o
+#        C:\Users\wanqi\Documents\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\MK60_conf.o
+#        C:\Users\wanqi\Documents\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\MK60_dac.o
+#        C:\Users\wanqi\Documents\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\MK60_dma.o
+#        C:\Users\wanqi\Documents\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\MK60_DWT.o
+#        C:\Users\wanqi\Documents\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\MK60_flash.o
+#        C:\Users\wanqi\Documents\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\MK60_flexbus.o
+#        C:\Users\wanqi\Documents\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\MK60_ftm.o
+#        C:\Users\wanqi\Documents\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\MK60_gpio.o
+#        C:\Users\wanqi\Documents\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\MK60_i2c.o
+#        C:\Users\wanqi\Documents\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\MK60_it.o
+#        C:\Users\wanqi\Documents\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\MK60_lptmr.o
+#        C:\Users\wanqi\Documents\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\MK60_mcg.o
+#        C:\Users\wanqi\Documents\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\MK60_PIT.o
+#        C:\Users\wanqi\Documents\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\MK60_port.o
+#        C:\Users\wanqi\Documents\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\MK60_rtc.o
+#        C:\Users\wanqi\Documents\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\MK60_sdhc.o
+#        C:\Users\wanqi\Documents\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\MK60_spi.o
+#        C:\Users\wanqi\Documents\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\MK60_SysTick.o
+#        C:\Users\wanqi\Documents\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\MK60_uart.o
+#        C:\Users\wanqi\Documents\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\MK60_usb.o
+#        C:\Users\wanqi\Documents\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\MK60_wdog.o
+#        C:\Users\wanqi\Documents\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\Mutily_Line.o
+#        C:\Users\wanqi\Documents\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\Pid.o
+#        C:\Users\wanqi\Documents\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\Signal.o
+#        C:\Users\wanqi\Documents\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\startup_MK60DZ10.o
+#        C:\Users\wanqi\Documents\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\system_MK60DZ10.o
+#        "C:\Users\wanqi\Documents\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\upper
+#        monitor.o"
+#        C:\Users\wanqi\Documents\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\USB.o
+#        C:\Users\wanqi\Documents\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\USB_CDC.o
+#        C:\Users\wanqi\Documents\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\VCAN_ASCII.o
+#        C:\Users\wanqi\Documents\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\VCAN_BMP.o
+#        C:\Users\wanqi\Documents\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\VCAN_camera.o
+#        C:\Users\wanqi\Documents\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\VCAN_computer.o
+#        C:\Users\wanqi\Documents\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\vcan_img2sd.o
+#        C:\Users\wanqi\Documents\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\VCAN_key.o
+#        C:\Users\wanqi\Documents\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\VCAN_key_event.o
+#        C:\Users\wanqi\Documents\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\VCAN_LCD.o
+#        C:\Users\wanqi\Documents\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\VCAN_LCD_CH.o
+#        C:\Users\wanqi\Documents\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\VCAN_LCD_ILI9341.o
+#        C:\Users\wanqi\Documents\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\VCAN_LCD_ST7735R.o
+#        C:\Users\wanqi\Documents\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\VCAN_LCD_ST7735S.o
+#        C:\Users\wanqi\Documents\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\VCAN_LED.o
+#        C:\Users\wanqi\Documents\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\VCAN_MMA7455.o
+#        C:\Users\wanqi\Documents\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\VCAN_NRF24L0.o
+#        C:\Users\wanqi\Documents\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\VCAN_NRF24L0_MSG.o
+#        C:\Users\wanqi\Documents\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\VCAN_OV7725_Eagle.o
+#        C:\Users\wanqi\Documents\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\VCAN_OV7725_Wolf.o
+#        C:\Users\wanqi\Documents\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\VCAN_RTC_count.o
+#        C:\Users\wanqi\Documents\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\VCAN_SCCB.o
+#        C:\Users\wanqi\Documents\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\vcan_sd_app.o
+#        C:\Users\wanqi\Documents\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\Vcan_touch.o
+#        C:\Users\wanqi\Documents\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\VCAN_TSL1401.o
+#        C:\Users\wanqi\Documents\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\VCAN_UI_VAR.o
+#        C:\Users\wanqi\Documents\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj\vectors.o
+#        -o
+#        C:\Users\wanqi\Documents\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Exe\vcan_Kinetis.out
+#        --map
+#        C:\Users\wanqi\Documents\GitHub\kalman_filter\Prj\IAR\FX15_Debug\List\vcan_Kinetis.map
+#        --config "C:\Users\wanqi\Documents\GitHub\kalman_filter\Prj\IAR\config
 #        files\vcan_ROM_K60X512.icf" --semihosting
-#        Z:\GitHub\kalman_filter\Prj\IAR\..\..\Lib\CMSIS\iar_cortexM4l_math.a
+#        C:\Users\wanqi\Documents\GitHub\kalman_filter\Prj\IAR\..\..\Lib\CMSIS\iar_cortexM4l_math.a
 #        --entry __iar_program_start --redirect __write=__write_buffered --vfe
 #
 ###############################################################################
@@ -113,7 +116,7 @@ __SystemLibrary = DLib
   .noinit              ro code  0x00000410     0x8  startup_MK60DZ10.o [1]
                               - 0x00000418     0x8
 
-"P1", part 2 of 2:                          0x4930
+"P1", part 2 of 2:                          0x497c
   .text                ro code  0x00000418   0xd92  xprintffull_nomb.o [3]
   .text                ro code  0x000011aa    0x22  zero_init3.o [5]
   .text                ro code  0x000011cc    0x16  strchr.o [5]
@@ -166,29 +169,29 @@ __SystemLibrary = DLib
   .text                ro code  0x000048e4    0x40  MK60_wdog.o [1]
   .text                ro code  0x00004924    0x2c  misc.o [1]
   .rodata              const    0x00004950    0xfc  LCD.o [1]
-  .rodata              const    0x00004a4c    0x3c  MK60_conf.o [1]
-  .rodata              const    0x00004a88    0x38  MK60_flash.o [1]
-  .rodata              const    0x00004ac0    0x38  MK60_uart.o [1]
-  .rodata              const    0x00004af8    0x34  MK60_adc.o [1]
-  .rodata              const    0x00004b2c    0x30  misc.o [1]
-  .rodata              const    0x00004b5c    0x30  MK60_gpio.o [1]
-  .text                ro code  0x00004b8c    0x28  data_init.o [5]
-  .rodata              const    0x00004bb4    0x24  MK60_conf.o [1]
-  .iar.init_table      const    0x00004bd8    0x10  - Linker created -
-  .rodata              const    0x00004be8    0x20  MK60_conf.o [1]
-  .text                ro code  0x00004c08    0x1a  fpinit_M.o [4]
-  .text                ro code  0x00004c24    0x1a  cmain.o [5]
-  .text                ro code  0x00004c3e     0x4  low_level_init.o [3]
-  .text                ro code  0x00004c42     0x4  exit.o [3]
-  .text                ro code  0x00004c48     0xa  cexit.o [5]
-  .text                ro code  0x00004c54    0x14  exit.o [6]
-  .text                ro code  0x00004c68    0x16  xprout.o [3]
-  .text                ro code  0x00004c80     0xc  putchar.o [3]
-  .rodata              const    0x00004c8c    0x14  LCD.o [1]
-  .rodata              const    0x00004ca0    0x14  MK60_conf.o [1]
-  .text                ro code  0x00004cb4     0xc  cstartup_M.o [5]
-  Initializer bytes    ro data  0x00004cc0    0x88  <for P2 s0>
-                              - 0x00004d48  0x4930
+  .rodata              const    0x00004a4c    0x44  MK60_adc.o [1]
+  .rodata              const    0x00004a90    0x44  MK60_flash.o [1]
+  .rodata              const    0x00004ad4    0x44  MK60_gpio.o [1]
+  .rodata              const    0x00004b18    0x44  MK60_uart.o [1]
+  .rodata              const    0x00004b5c    0x40  misc.o [1]
+  .rodata              const    0x00004b9c    0x3c  MK60_conf.o [1]
+  .text                ro code  0x00004bd8    0x28  data_init.o [5]
+  .rodata              const    0x00004c00    0x24  MK60_conf.o [1]
+  .iar.init_table      const    0x00004c24    0x10  - Linker created -
+  .rodata              const    0x00004c34    0x20  MK60_conf.o [1]
+  .text                ro code  0x00004c54    0x1a  fpinit_M.o [4]
+  .text                ro code  0x00004c70    0x1a  cmain.o [5]
+  .text                ro code  0x00004c8a     0x4  low_level_init.o [3]
+  .text                ro code  0x00004c8e     0x4  exit.o [3]
+  .text                ro code  0x00004c94     0xa  cexit.o [5]
+  .text                ro code  0x00004ca0    0x14  exit.o [6]
+  .text                ro code  0x00004cb4    0x16  xprout.o [3]
+  .text                ro code  0x00004ccc     0xc  putchar.o [3]
+  .rodata              const    0x00004cd8    0x14  LCD.o [1]
+  .rodata              const    0x00004cec    0x14  MK60_conf.o [1]
+  .text                ro code  0x00004d00     0xc  cstartup_M.o [5]
+  Initializer bytes    ro data  0x00004d0c    0x88  <for P2 s0>
+                              - 0x00004d94  0x497c
 
 "P2":                                        0xad0
   .data                         0x1fff0410   0x7fc  <Block>
@@ -238,16 +241,16 @@ Zero (__iar_zero_init3)
 
     Module                 ro code  rw code  ro data  rw data
     ------                 -------  -------  -------  -------
-Z:\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj: [1]
+C:\Users\wanqi\Documents\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj: [1]
     LCD.o                    1 612             1 792
     MK60_DWT.o                 120
-    MK60_adc.o                 696                60        8
+    MK60_adc.o                 696                76        8
     MK60_conf.o                320             1 948    1 800
-    MK60_flash.o                        400      456
-    MK60_gpio.o                296                68       20
+    MK60_flash.o                        400      468
+    MK60_gpio.o                296                88       20
     MK60_mcg.o                 980       80      172       92
     MK60_port.o                176                20       20
-    MK60_uart.o                624                80       24
+    MK60_uart.o                624                92       24
     MK60_wdog.o                 64
     VCAN_LED.o                 112                 4        4
     VCAN_computer.o             64                 4
@@ -255,12 +258,12 @@ Z:\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj: [1]
     kalman_filter.o            196
     keyboard16.o               616                 4        4
     main.o                     620
-    misc.o                      44                48
+    misc.o                      44                64
     startup_MK60DZ10.o           8
     system_MK60DZ10.o          320                         12
     vectors.o                                  1 040
     ---------------------------------------------------------
-    Total:                   7 024      480    5 704    1 992
+    Total:                   7 024      480    5 780    1 992
 
 command line: [2]
     ---------------------------------------------------------
@@ -320,7 +323,7 @@ shb_l.a: [6]
     Gaps                        24
     Linker created              24       16       32
 -------------------------------------------------------------
-    Grand Total:            13 846      496    5 936    2 272
+    Grand Total:            13 846      496    6 012    2 272
 
 
 *******************************************************************************
@@ -335,16 +338,16 @@ Entry                      Address   Size  Type      Object
 .data$$Limit            0x1fff0c0c          --   Gb  - Linker created -
 .data_init$$Base        0x00001cf0          --   Gb  - Linker created -
 .data_init$$Limit       0x000024ec          --   Gb  - Linker created -
-?main                   0x00004c25         Code  Gb  cmain.o [5]
+?main                   0x00004c71         Code  Gb  cmain.o [5]
 ADCN                    0x1fff0414    0x8  Data  Gb  MK60_adc.o [1]
-ASSERT_FAILED_STR       0x00004bb4   0x24  Data  Gb  MK60_conf.o [1]
+ASSERT_FAILED_STR       0x00004c00   0x24  Data  Gb  MK60_conf.o [1]
 CodeRelocate$$Base      0x000045b4          --   Gb  - Linker created -
 CodeRelocate$$Limit     0x000047a4          --   Gb  - Linker created -
 CodeRelocateRam$$Base   0x1fff0c0c          --   Gb  - Linker created -
 CodeRelocateRam$$Limit  0x1fff0dfc          --   Gb  - Linker created -
 Display                 0x00002947  0x1a6  Code  Gb  LCD.o [1]
 F14x16                  0x00004950   0xfc  Data  Gb  LCD.o [1]
-F14x16_Idx              0x00004c8c   0x14  Data  Gb  LCD.o [1]
+F14x16_Idx              0x00004cd8   0x14  Data  Gb  LCD.o [1]
 F8X16                   0x00003278  0x5f0  Data  Gb  LCD.o [1]
 GPIOX                   0x1fff0b24   0x14  Data  Gb  MK60_gpio.o [1]
 KEY_PTxn                0x1fff0bc0    0x8  Data  Gb  VCAN_key.o [1]
@@ -361,8 +364,8 @@ LED_PTxn                0x1fff0bc8    0x4  Data  Gb  VCAN_LED.o [1]
 LoadInt                 0x000009a1   0x6e  Code  Lc  xprintffull_nomb.o [3]
 NVIC_SystemReset        0x00002d21   0x1a  Code  Lc  MK60_conf.o [1]
 PORTX                   0x1fff0b94   0x14  Data  Gb  MK60_port.o [1]
-Region$$Table$$Base     0x00004bd8          --   Gb  - Linker created -
-Region$$Table$$Limit    0x00004be8          --   Gb  - Linker created -
+Region$$Table$$Base     0x00004c24          --   Gb  - Linker created -
+Region$$Table$$Limit    0x00004c34          --   Gb  - Linker created -
 Reset_Handler           0x00000411         Code  Gb  startup_MK60DZ10.o [1]
 UARTN                   0x1fff0ba8   0x18  Data  Gb  MK60_uart.o [1]
 _GenldFullNoMb          0x00000f17  0x24c  Code  Lc  xprintffull_nomb.o [3]
@@ -371,7 +374,7 @@ _LitobFullNoMb          0x00000a0f  0x106  Code  Lc  xprintffull_nomb.o [3]
 _Locale_aeabi_lconv     0x1fff0ea8   0x38  Data  Gb  localeconv.o [3]
 _Locale_lconv           0x1fff0e58   0x50  Data  Gb  localeconv.o [3]
 _PrintfFullNoMb         0x00000419  0x582  Code  Gb  xprintffull_nomb.o [3]
-_Prout                  0x00004c69   0x16  Code  Gb  xprout.o [3]
+_Prout                  0x00004cb5   0x16  Code  Gb  xprout.o [3]
 _PutcharsFullNoMb       0x00001163   0x2e  Code  Lc  xprintffull_nomb.o [3]
 __BOOT_STACK_ADDRESS {Abs}
                         0x2000fff8          --   Gb  command line/config [2]
@@ -393,9 +396,9 @@ __aeabi_ui2d            0x000015fd         Code  Gb  I32ToDbl.o [4]
 __aeabi_uldivmod        0x00001275         Code  Gb  I64DivMod.o [5]
 __as_entries_start      0xffffffff          --   Gb  command line/config [2]
 __as_table_start        0xffffffff          --   Gb  command line/config [2]
-__cmain                 0x00004c25         Code  Gb  cmain.o [5]
+__cmain                 0x00004c71         Code  Gb  cmain.o [5]
 __code_start__ {Abs}    0x00000410          --   Gb  command line/config [2]
-__exit                  0x00004c55   0x14  Code  Gb  exit.o [6]
+__exit                  0x00004ca1   0x14  Code  Gb  exit.o [6]
 __iar_Dnorm             0x000013db   0x42  Code  Gb  xdnorm.o [4]
 __iar_Dscale            0x0000147d  0x114  Code  Gb  xdscale.o [4]
 __iar_Locale_lconv_init
@@ -405,13 +408,13 @@ __iar_Stdout            0x1fff0bcc   0x40  Data  Gb  xfiles.o [3]
 __iar_Strchr            0x000011cd         Code  Gb  strchr.o [5]
 __iar_d2uiz             0x000015c9         Code  Gb  DblToI32.o [4]
 __iar_dadd              0x00001c19         Code  Gb  DblAdd.o [4]
-__iar_data_init3        0x00004b8d   0x28  Code  Gb  data_init.o [5]
+__iar_data_init3        0x00004bd9   0x28  Code  Gb  data_init.o [5]
 __iar_dlib_perthread_access
                         0x00001ced    0x2  Code  Gb  xtls.o [3]
 __iar_dsub              0x0000162d         Code  Gb  DblSub.o [4]
 __iar_dsubStart         0x0000163f         Code  Gb  DblSub.o [4]
-__iar_init_vfp          0x00004c09         Code  Gb  fpinit_M.o [4]
-__iar_program_start     0x00004cb5         Code  Gb  cstartup_M.o [5]
+__iar_init_vfp          0x00004c55         Code  Gb  fpinit_M.o [4]
+__iar_program_start     0x00004d01         Code  Gb  cstartup_M.o [5]
 __iar_ui2d              0x00001601         Code  Gb  I32ToDbl.o [4]
 __iar_unaligned___aeabi_memcpy
                         0x00001365         Code  Gb  ABImemcpy_unaligned.o [5]
@@ -420,11 +423,11 @@ __iar_unaligned___aeabi_memcpy4
 __iar_unaligned___aeabi_memcpy8
                         0x00001385         Code  Gb  ABImemcpy_unaligned.o [5]
 __iar_zero_init3        0x000011ab   0x22  Code  Gb  zero_init3.o [5]
-__low_level_init        0x00004c3f    0x4  Code  Gb  low_level_init.o [3]
+__low_level_init        0x00004c8b    0x4  Code  Gb  low_level_init.o [3]
 __vector_table          0x00000000  0x410  Data  Gb  vectors.o [1]
-_call_main              0x00004c31         Code  Gb  cmain.o [5]
-_exit                   0x00004c49         Code  Gb  cexit.o [5]
-_main                   0x00004c3b         Code  Gb  cmain.o [5]
+_call_main              0x00004c7d         Code  Gb  cmain.o [5]
+_exit                   0x00004c95         Code  Gb  cexit.o [5]
+_main                   0x00004c87         Code  Gb  cmain.o [5]
 adc_init                0x00003c45  0x20e  Code  Gb  MK60_adc.o [1]
 adc_once                0x00003e53   0x50  Code  Gb  MK60_adc.o [1]
 adc_start               0x00003ea3   0x44  Code  Lc  MK60_adc.o [1]
@@ -437,7 +440,7 @@ default_isr             0x00002e0f   0x30  Code  Gb  MK60_conf.o [1]
 div                     0x00001bf1    0xe  Code  Gb  div.o [3]
 dwt_delay_ms            0x00002f55   0x18  Code  Gb  MK60_DWT.o [1]
 dwt_delay_us            0x00002ef5   0x4e  Code  Gb  MK60_DWT.o [1]
-exit                    0x00004c43    0x4  Code  Gb  exit.o [3]
+exit                    0x00004c8f    0x4  Code  Gb  exit.o [3]
 flash_cmd               0x1fff0c1d   0x20  Code  Gb  MK60_flash.o [1]
 flash_erase_sector      0x1fff0c61   0x5c  Code  Gb  MK60_flash.o [1]
 flash_init              0x1fff0c3d   0x24  Code  Gb  MK60_flash.o [1]
@@ -467,7 +470,7 @@ pll_init                0x00003b75   0xb2  Code  Gb  MK60_mcg.o [1]
 port_init               0x00002c61   0x44  Code  Gb  MK60_port.o [1]
 port_init_NoALT         0x00002ca5   0x62  Code  Gb  MK60_port.o [1]
 printf                  0x00002ed1   0x24  Code  Gb  printf.o [3]
-putchar                 0x00004c81    0xc  Code  Gb  putchar.o [3]
+putchar                 0x00004ccd    0xc  Code  Gb  putchar.o [3]
 set_sys_dividers        0x1fff0dad   0x50  Code  Gb  MK60_mcg.o [1]
 start                   0x000047a5   0x2e  Code  Gb  system_MK60DZ10.o [1]
 start_check             0x00002d75   0x9a  Code  Gb  MK60_conf.o [1]
@@ -484,7 +487,7 @@ wdog_unlock             0x000048fb   0x20  Code  Lc  MK60_wdog.o [1]
 write_vtor              0x00004925   0x22  Code  Gb  misc.o [1]
 
 
-[1] = Z:\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj
+[1] = C:\Users\wanqi\Documents\GitHub\kalman_filter\Prj\IAR\FX15_Debug\Obj
 [2] = command line
 [3] = dl7M_tlf.a
 [4] = m7M_tlv.a
@@ -493,7 +496,7 @@ write_vtor              0x00004925   0x22  Code  Gb  misc.o [1]
 
   13 846 bytes of readonly  code memory
      496 bytes of readwrite code memory
-   5 936 bytes of readonly  data memory
+   6 012 bytes of readonly  data memory
    2 272 bytes of readwrite data memory
 
 Errors: none
